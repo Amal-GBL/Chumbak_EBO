@@ -1,0 +1,18 @@
+{
+  "name": "chumbak-sales-ingestor",
+  "version": "1.0.0",
+  "description": "Automated ingestion of Chumbak eShopaid sales data to PostgreSQL",
+  "main": "chumbak_ebo_sales_v2.js",
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "pg": "^8.7.3",
+    "dotenv": "^16.0.0",
+    "csv-parser": "^3.0.0",
+    "puppeteer": "^24.0.0"
+  },
+  "scripts": {
+    "start": "node chumbak_ebo_sales_v2.js",
+    "sync-sales": "node chumbak_ebo_sales_v2.js",
+    "sync-inventory": "node chumbak_ebo_inventory_v2.js"
+  }
+}
